@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			123->6->1+2+3
+//			
+//			xyz
+//			x
+//			y
+//			z
+//			1   Math.floor(123/100)或者parseInt(123/100)或者parsetInt(123*0.01)
+//			2   parseInt(123%100/10)或者  parseInt(123/10)%10
+//			3   123%10
+
+			var num = prompt("请您输入三位数");
+			
+			
+			var bw = Math.floor(num/100);
+			var sw = parseInt(num%100/10);
+			var gw = num%10;
+			
+			//个位十位百位之和
+			var sum = bw + sw + gw;
+			
+			console.log("你输入的三位数"+num+"的各个位数之和数"+sum);
+		</script>
+	</body>
+</html>

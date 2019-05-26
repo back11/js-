@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//无论是++a还是a++自身都会+1
+			//++a是先自加后运算   a++是先运算后自加
+			
+			var a = 1;
+			
+			a = a++ + a--;//等式1 + 等式2
+			console.log(a);//3
+			
+			++a;
+			console.log(a);//4
+			
+			
+			console.log(--a + a++ - a-- + ++a); 
+			
+			
+			//////////////////////////////////////////////
+			var b = 10;
+			console.log(b++ + --b - ++b + b--);
+		</script>
+	</body>
+</html>
